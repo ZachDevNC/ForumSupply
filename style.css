@@ -6,7 +6,7 @@
 }
 
 :root {
-  --forum-blue: #6894b7;
+  --forum-blue: rgb(104, 148, 183);
 }
 
 /* Navbar */
@@ -25,6 +25,9 @@ nav {
 }
 
 .navLinks {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
   list-style: none;
   display: flex;
   gap: 36px;
@@ -60,7 +63,7 @@ nav {
 
 h2 {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 46px;
 }
 
 .aboutCard {
@@ -87,7 +90,7 @@ h2 {
 
 .productsHeader {
   font-weight: 700;
-  font-size: 40px;
+  font-size: 46px;
   display: flex;
   justify-content: center;
   margin-top: 123px;
@@ -168,23 +171,65 @@ footer {
   display: flex;
 }
 
+.emailIcon, .phoneIcon  {
+  height: 20px;
+  width: 24px;
+  margin-right: 10px;
+}
+
+.instagramIcon {
+  height: 24px;
+  width: 24px;
+}
+
+.iconLinks {
+  display: flex;
+  gap: 37px;
+  align-items: center;
+  margin-right: 135px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: var(--forum-blue)
+}
+
 /* Mobile Build */
+
 @media (max-width: 872px) {
+  /* Nav */
+  .navLogo {
+    margin-left: 15%;
+    width: 90%;
+    height: 90%;
+  }
+
+  #productsLink,
+  #servicesLink {
+    display: none;
+  }
+
+  .navLinks {
+    margin-right: 10%;
+  }
+
+  #navEmail {
+    font-size: 14px;
+  }
+
   /* Hero */
 
-    .navLogo {
-        
-    }
-
   .heroImage {
-    width: 100vw;
+    width: 100%;
   }
 
   .heroCopy {
-    font-size: 30px;
+    font-size: 36px;
     margin-left: 10%;
-    width: 200px;
-    margin-top: -40%;
+    width: 250px;
+    margin-top: -43%;
   }
 
   /* About Section */
@@ -192,7 +237,8 @@ footer {
   .aboutHeader {
     text-decoration: underline;
     text-decoration-color: var(--forum-blue);
-    font-size: 25px;
+    text-underline-offset: 8px;
+    font-size: 32px;
   }
 
   .aboutCard {
@@ -212,28 +258,39 @@ footer {
   /* Products and Services */
 
   .productsHeader {
-    font-size: 25px;
+    font-size: 32px;
     text-decoration: underline;
     text-decoration-color: var(--forum-blue);
+    text-underline-offset: 8px;
   }
 
   .productCard {
     flex-direction: column;
   }
 
+  #productCard1, #productCard3, #productCard5 {
+    background-color: rgba(104, 148, 183, .15);
+    padding: 40px 0; 
+  }
+
+  #productCard2, #productCard4 {
+    margin: 50px 0;
+  }
+
   .productImages {
     width: 80%;
-    filter: none;
+    filter: drop-shadow(0px 6px 25px rgba(0, 0, 0, 0.15));
   }
 
   h3 {
     font-size: 25px;
     text-align: center;
+    margin-top: -10%;
   }
 
   .productsCopy {
     width: 80%;
-    font-size: 15px;
+    font-size: 16px;
     margin-left: auto;
     margin-right: auto;
     line-height: 24px;
@@ -252,7 +309,36 @@ footer {
   .vendorList1 a {
     font-size: 18px;
     display: block;
-    
-   
   }
+
+  /* Footer */
+
+  .footerLogoStack {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+  }
+
+  .emailIcon, .phoneIcon {
+    display: none;
+  }
+
+  .emailLink, .phoneLink {
+    font-size: 14px;
+  }
+  
+  footer {
+    flex-direction: column;
+    text-align: center;
+    height: 200px
+  }
+  
+  .iconLinks {
+    margin-right: 0;
+    margin-bottom: 30px;
+    gap: 20px;
+  }
+    
+  
+
 }

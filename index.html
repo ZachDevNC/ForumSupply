@@ -30,13 +30,15 @@
       </div>
       <ul class="navLinks">
         <li>
-          <a href="index.html" id="homeLink">Products</a>
+          <a href="#products" id="productsLink">Products</a>
         </li>
         <li>
-          <a href="work.html" id="workLink">Services</a>
+          <a href="#install" id="servicesLink">Installation</a>
         </li>
         <li>
-          <a href="mailto:info@forumsupply.com">Info@forumsupply.com</a>
+          <a href="mailto:info@forumsupply.com" id="navEmail"
+            >Info@forumsupply.com</a
+          >
         </li>
       </ul>
     </nav>
@@ -70,11 +72,11 @@
     <!-- Product Cards -->
 
     <main>
-      <h2 class="productsHeader">Products and Services</h2>
+      <h2 id="products" class="productsHeader">Product Offerings</h2>
 
       <!-- Flooring Card -->
 
-      <div class="productCard">
+      <div class="productCard" id="productCard1">
         <img
           class="productImages"
           src="/images/flooring.jpg"
@@ -103,7 +105,7 @@
 
       <!-- Cabinetry Card -->
 
-      <div class="productCard">
+      <div class="productCard" id="productCard2">
         <img
           class="productImages"
           src="/images/cabinets.jpg"
@@ -126,7 +128,7 @@
 
       <!-- Hardware Card -->
 
-      <div class="productCard">
+      <div class="productCard" id="productCard3">
         <img
           class="productImages"
           src="/images/hardware.jpg"
@@ -150,7 +152,7 @@
 
       <!-- Solid Tops Card -->
 
-      <div class="productCard">
+      <div class="productCard" id="productCard4">
         <img
           class="productImages"
           src="/images/solidtops.jpg"
@@ -176,7 +178,7 @@
 
       <!-- HVAC Card -->
 
-      <div class="productCard">
+      <div class="productCard" id="productCard5">
         <img
           class="productImages"
           src="/images/hvac.jpg"
@@ -199,7 +201,7 @@
 
       <!-- Install Card -->
 
-      <section class="aboutCard">
+      <section id="install" class="aboutCard">
         <h2 class="aboutHeader">Install</h2>
         <div class="verticalLine"></div>
         <p class="aboutCopy">
@@ -222,11 +224,22 @@
         <p>149 S Walnut Circle Greensboro, NC 27409</p>
       </div>
       <div class="footerLinks">
-        <div class="emailLink">
-          <a href=""><img src="/images/envelope-solid.svg" alt="" /></a>
-          <a href="mailto:info@forumsupply.com">Info@forumsupply.com</a>
+        <div class="iconLinks">
+          <div class="emailLink">
+            <a href="mailto:"
+              ><img class="emailIcon" src="/images/envelope-solid.svg" alt=""
+            /></a>
+            <a href="mailto:info@forumsupply.com">Info@forumsupply.com</a>
+          </div>
+          <div class="phoneLink">
+            <a href="tel:+"><img class="phoneIcon" src="/images/phone-solid.svg" alt="" /></a>
+            <a href="tel:+13366608772">336.660.8772</a>
+          </div>
+          <a href=""><img class="instagramIcon" src="/images/instagram-brands.svg" alt=""></a>
         </div>
       </div>
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
