@@ -6,7 +6,7 @@
 }
 
 :root {
---forum-blue: #6894B7;
+  --forum-blue: #6894b7;
 }
 
 /* Navbar */
@@ -45,22 +45,22 @@ nav {
 /* Hero Copy */
 
 .heroCopy {
-    font-weight: 700;
-    position: absolute;
-    width: 547px;
-    height: 303px;
-    font-size: 86px;
-    color: white;
-    margin-left: 129px;
-    /* text-shadow: 2px 2px black; */
-    margin-top: -38%;
+  font-weight: 700;
+  position: absolute;
+  width: 547px;
+  height: 303px;
+  font-size: 86px;
+  color: white;
+  margin-left: 129px;
+  /* text-shadow: 2px 2px black; */
+  margin-top: -38%;
 }
 
 /* About Card */
 
 h2 {
-    font-weight: 700;
-    font-size: 40px
+  font-weight: 700;
+  font-size: 40px;
 }
 
 .aboutCard {
@@ -72,97 +72,187 @@ h2 {
 }
 
 .verticalLine {
-    width: 3px;
-    height: 125px;
-    background-color: var(--forum-blue);
+  width: 3px;
+  height: 125px;
+  background-color: var(--forum-blue);
 }
 
 .aboutCopy {
-    width: 700px;
-    font-size: 20px;
-    line-height: 32px;
-
+  width: 700px;
+  font-size: 20px;
+  line-height: 32px;
 }
 
 /* Products and Services */
 
 .productsHeader {
-    font-weight: 700;
-    font-size: 40px;
-    display: flex;
-    justify-content: center;
-    margin-top: 123px;
+  font-weight: 700;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 123px;
 }
 
 h3 {
-    font-weight: 700;
-    font-size: 36px;
-
+  font-weight: 700;
+  font-size: 36px;
 }
 
 .productCard {
-    display: flex;
-    justify-content: center;
-    gap: 68px;
-    margin-top: 89px;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  gap: 68px;
+  margin-top: 89px;
+  align-items: center;
 }
 
 .productImages {
-    border-radius: 10px;
-    filter: drop-shadow(0px 6px 25px rgba(0, 0, 0, 0.15));
+  border-radius: 10px;
+  filter: drop-shadow(0px 6px 25px rgba(0, 0, 0, 0.25));
 }
 
-
 .productsCopy {
-    font-weight: 400;
-    width: 634px;
-    font-size: 20px;
-    margin-top: 25px;
-    line-height: 32px;
+  font-weight: 400;
+  width: 634px;
+  font-size: 20px;
+  margin-top: 25px;
+  line-height: 32px;
 }
 
 h4 {
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 25px;
-    margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 12px;
 }
 
 .vendorList1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    line-height: 32px;
-    font-size: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  line-height: 32px;
+  font-size: 20px;
 }
 
 .vendorList1 a {
-    text-decoration: none;
-    color: var(--forum-blue);
+  text-decoration: none;
+  color: var(--forum-blue);
 }
 
 /* Footer */
 
 footer {
-    display: flex;
-    justify-content: space-between;
-    height: 170px;
-    width: 100%;
-    background-color: #EFEEF2;
-    align-items: center;
-    margin-top: 123px;
+  display: flex;
+  justify-content: space-between;
+  height: 170px;
+  width: 100%;
+  background-color: #efeef2;
+  align-items: center;
+  margin-top: 123px;
 }
 
 .footerLogo {
-    height: 54px;
-    width: 176px;
-    margin-bottom: 14px;
+  height: 54px;
+  width: 176px;
+  margin-bottom: 14px;
 }
 
 .footerLogoStack {
-    margin-left: 128px;
+  margin-left: 128px;
 }
 
 .footerLogoStack p {
-    font-size: 14px;
+  font-size: 14px;
+}
+
+.footerLinks {
+  display: flex;
+}
+
+/* Mobile Build */
+@media (max-width: 872px) {
+  /* Hero */
+
+    .navLogo {
+        
+    }
+
+  .heroImage {
+    width: 100vw;
+  }
+
+  .heroCopy {
+    font-size: 30px;
+    margin-left: 10%;
+    width: 200px;
+    margin-top: -40%;
+  }
+
+  /* About Section */
+
+  .aboutHeader {
+    text-decoration: underline;
+    text-decoration-color: var(--forum-blue);
+    font-size: 25px;
+  }
+
+  .aboutCard {
+    flex-direction: column;
+  }
+
+  .aboutCopy {
+    width: 80%;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .verticalLine {
+    display: none;
+  }
+
+  /* Products and Services */
+
+  .productsHeader {
+    font-size: 25px;
+    text-decoration: underline;
+    text-decoration-color: var(--forum-blue);
+  }
+
+  .productCard {
+    flex-direction: column;
+  }
+
+  .productImages {
+    width: 80%;
+    filter: none;
+  }
+
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .productsCopy {
+    width: 80%;
+    font-size: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 24px;
+  }
+
+  h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .vendorList1 {
+    display: block;
+    text-align: center;
+  }
+
+  .vendorList1 a {
+    font-size: 18px;
+    display: block;
+    
+   
+  }
 }
