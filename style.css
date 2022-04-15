@@ -1,0 +1,168 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+:root {
+--forum-blue: #6894B7;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 117px;
+}
+
+.navLogo {
+  width: 200px;
+  height: 61.25px;
+  margin-left: 129px;
+}
+
+.navLinks {
+  list-style: none;
+  display: flex;
+  gap: 36px;
+  margin-right: 133px;
+}
+
+.navLinks a {
+  text-decoration: none;
+  color: black;
+}
+
+/* Hero Image */
+
+.heroImage {
+  width: 100%;
+}
+
+/* Hero Copy */
+
+.heroCopy {
+    font-weight: 700;
+    position: absolute;
+    width: 547px;
+    height: 303px;
+    font-size: 86px;
+    color: white;
+    margin-left: 129px;
+    /* text-shadow: 2px 2px black; */
+    margin-top: -38%;
+}
+
+/* About Card */
+
+h2 {
+    font-weight: 700;
+    font-size: 40px
+}
+
+.aboutCard {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  align-items: center;
+  margin-top: 85px;
+}
+
+.verticalLine {
+    width: 3px;
+    height: 125px;
+    background-color: var(--forum-blue);
+}
+
+.aboutCopy {
+    width: 700px;
+    font-size: 20px;
+    line-height: 32px;
+
+}
+
+/* Products and Services */
+
+.productsHeader {
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 123px;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 36px;
+
+}
+
+.productCard {
+    display: flex;
+    justify-content: center;
+    gap: 68px;
+    margin-top: 89px;
+    align-items: center;
+}
+
+.productImages {
+    border-radius: 10px;
+    filter: drop-shadow(0px 6px 25px rgba(0, 0, 0, 0.15));
+}
+
+
+.productsCopy {
+    font-weight: 400;
+    width: 634px;
+    font-size: 20px;
+    margin-top: 25px;
+    line-height: 32px;
+}
+
+h4 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 12px;
+}
+
+.vendorList1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    line-height: 32px;
+    font-size: 20px;
+}
+
+.vendorList1 a {
+    text-decoration: none;
+    color: var(--forum-blue);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 170px;
+    width: 100%;
+    background-color: #EFEEF2;
+    align-items: center;
+    margin-top: 123px;
+}
+
+.footerLogo {
+    height: 54px;
+    width: 176px;
+    margin-bottom: 14px;
+}
+
+.footerLogoStack {
+    margin-left: 128px;
+}
+
+.footerLogoStack p {
+    font-size: 14px;
+}
