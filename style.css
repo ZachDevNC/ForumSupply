@@ -55,7 +55,7 @@ nav {
   font-size: 86px;
   color: white;
   margin-left: 129px;
-  /* text-shadow: 2px 2px black; */
+  text-shadow: 3px 3px 30px rgb(134, 132, 132);
   margin-top: -38%;
 }
 
@@ -230,6 +230,8 @@ footer {
     margin-left: 10%;
     width: 250px;
     margin-top: -43%;
+    text-shadow: 1px 1px 9px rgb(101, 99, 99);
+
   }
 
   /* About Section */

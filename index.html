@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       src="https://kit.fontawesome.com/d973e5346a.js"
       crossorigin="anonymous"
@@ -53,7 +54,9 @@
 
     <!-- Hero Copy -->
 
-    <h1 class="heroCopy">Multi-Family Construction Company</h1>
+    <h1 data-aos="fade-right" data-aos-duration="1100" class="heroCopy">
+      Multi-Family Construction Company
+    </h1>
 
     <!-- About Card -->
 
@@ -76,7 +79,12 @@
 
       <!-- Flooring Card -->
 
-      <div class="productCard" id="productCard1">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1100"
+        class="productCard"
+        id="productCard1"
+      >
         <img
           class="productImages"
           src="/images/flooring.jpg"
@@ -105,7 +113,12 @@
 
       <!-- Cabinetry Card -->
 
-      <div class="productCard" id="productCard2">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1100"
+        class="productCard"
+        id="productCard2"
+      >
         <img
           class="productImages"
           src="/images/cabinets.jpg"
@@ -128,7 +141,12 @@
 
       <!-- Hardware Card -->
 
-      <div class="productCard" id="productCard3">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1100"
+        class="productCard"
+        id="productCard3"
+      >
         <img
           class="productImages"
           src="/images/hardware.jpg"
@@ -152,7 +170,13 @@
 
       <!-- Solid Tops Card -->
 
-      <div class="productCard" id="productCard4">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1100"
+        data-aos-duration="1100"
+        class="productCard"
+        id="productCard4"
+      >
         <img
           class="productImages"
           src="/images/solidtops.jpg"
@@ -178,7 +202,12 @@
 
       <!-- HVAC Card -->
 
-      <div class="productCard" id="productCard5">
+      <div
+        data-aos="fade-right"
+        data-aos-duration="1100"
+        class="productCard"
+        id="productCard5"
+      >
         <img
           class="productImages"
           src="/images/hvac.jpg"
@@ -232,14 +261,25 @@
             <a href="mailto:info@forumsupply.com">Info@forumsupply.com</a>
           </div>
           <div class="phoneLink">
-            <a href="tel:+"><img class="phoneIcon" src="/images/phone-solid.svg" alt="" /></a>
+            <a href="tel:+"
+              ><img class="phoneIcon" src="/images/phone-solid.svg" alt=""
+            /></a>
             <a href="tel:+13366608772">336.660.8772</a>
           </div>
-          <a href=""><img class="instagramIcon" src="/images/instagram-brands.svg" alt=""></a>
+          <a href=""
+            ><img
+              class="instagramIcon"
+              src="/images/instagram-brands.svg"
+              alt=""
+          /></a>
         </div>
       </div>
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({once:true});
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
