@@ -1,4 +1,6 @@
-* {
+*,
+*:before,
+*:after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -9,12 +11,15 @@
   --forum-blue: rgb(104, 148, 183);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Navbar */
 
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   height: 117px;
 }
 
@@ -22,6 +27,7 @@ nav {
   width: 200px;
   height: 61.25px;
   margin-left: 129px;
+  margin-top: 27px;
 }
 
 .navLinks {
@@ -32,11 +38,29 @@ nav {
   display: flex;
   gap: 36px;
   margin-right: 133px;
+  margin-top: 44px;
 }
 
 .navLinks a {
   text-decoration: none;
   color: black;
+}
+
+.navHover::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--forum-blue);
+  transition: width 0.3s ease-in-out;
+}
+
+.navHover:hover::after {
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: var(--forum-blue);
+  display: block;
 }
 
 /* Hero Image */
@@ -171,7 +195,8 @@ footer {
   display: flex;
 }
 
-.emailIcon, .phoneIcon  {
+.emailIcon,
+.phoneIcon {
   height: 20px;
   width: 24px;
   margin-right: 10px;
@@ -193,26 +218,73 @@ footer {
 
 .footerLinks a {
   text-decoration: none;
-  color: var(--forum-blue)
+  color: var(--forum-blue);
 }
 
 /* Mobile Build */
 
-@media (max-width: 872px) {
-  /* Nav */
-  .navLogo {
-    margin-left: 15%;
-    width: 90%;
-    height: 90%;
+/* Small Laptops */
+@media (max-width: 1200px) {
+  .navLinks {
+    font-size: 16px;
+  }
+  
+
+  .productsCopy {
+    width: 425px;
+    font-size: 16px;
+    line-height: 25px;
   }
 
-  #productsLink,
-  #servicesLink {
-    display: none;
+  .vendorList1 {
+    font-size: 16px;
+    line-height: 25px;
+    width: 425px;
+  }
+
+  .navLogo {
+    margin-left: 50px;
   }
 
   .navLinks {
-    margin-right: 10%;
+    margin-right: 50px;
+  }
+
+  .phoneIcon,
+  .emailIcon,
+  instagramIcon {
+    height: 16px;
+    width: 16px;
+  }
+
+  .heroCopy {
+    margin-top: -40%;
+  }
+
+  .emailLink,
+  .phoneLink {
+    font-size: 16px;
+  }
+
+  .instagramIcon {
+    height: 18px;
+    width: 18px;
+  }
+
+  .footerLinks {
+    margin-right: -50px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  /* Nav */
+  .navLogo {
+    margin-left: 15%;
+  }
+
+  .navLinks {
+    margin-right: 4%;
   }
 
   #navEmail {
@@ -226,12 +298,11 @@ footer {
   }
 
   .heroCopy {
-    font-size: 36px;
+    font-size: 46px;
     margin-left: 10%;
-    width: 250px;
-    margin-top: -43%;
+    width: 300px;
+    margin-top: -38%;
     text-shadow: 1px 1px 9px rgb(101, 99, 99);
-
   }
 
   /* About Section */
@@ -270,18 +341,22 @@ footer {
     flex-direction: column;
   }
 
-  #productCard1, #productCard3, #productCard5 {
-    background-color: rgba(104, 148, 183, .15);
-    padding: 40px 0; 
+  #productCard1,
+  #productCard3,
+  #productCard5 {
+    background-color: rgba(104, 148, 183, 0.15);
+    padding: 40px 0;
   }
 
-  #productCard2, #productCard4 {
+  #productCard2,
+  #productCard4 {
     margin: 50px 0;
   }
 
   .productImages {
     width: 80%;
     filter: drop-shadow(0px 6px 25px rgba(0, 0, 0, 0.15));
+    margin-bottom: 40px;
   }
 
   h3 {
@@ -311,6 +386,7 @@ footer {
   .vendorList1 a {
     font-size: 18px;
     display: block;
+    line-height: 30px;
   }
 
   /* Footer */
@@ -321,26 +397,58 @@ footer {
     margin-top: 5%;
   }
 
-  .emailIcon, .phoneIcon {
+  .emailIcon,
+  .phoneIcon {
     display: none;
   }
 
-  .emailLink, .phoneLink {
+  .emailLink,
+  .phoneLink {
     font-size: 14px;
   }
-  
+
   footer {
     flex-direction: column;
     text-align: center;
-    height: 200px
+    height: 200px;
   }
-  
+
   .iconLinks {
     margin-right: 0;
     margin-bottom: 30px;
     gap: 20px;
   }
-    
-  
+}
 
+/* Large Phone */
+@media (max-width: 425px) {
+  #productsLink,
+  #servicesLink {
+    display: none;
+  }
+
+  .heroImage {
+    margin-top: -5%;
+  }
+
+  .navLogo {
+    width: 150px;
+    height: 45.9375px;
+  }
+
+  .instagramIcon {
+    margin-right: 45px;
+  }
+
+  .heroCopy {
+    font-size: 36px;
+    margin-left: 10%;
+    width: 300px;
+    margin-top: -42%;
+    text-shadow: 1px 1px 9px rgb(101, 99, 99);
+  }
+
+  h3 {
+    margin-top: -15%;
+  }
 }
