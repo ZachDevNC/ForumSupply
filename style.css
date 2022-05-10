@@ -280,11 +280,11 @@ footer {
 @media (max-width: 768px) {
   /* Nav */
   .navLogo {
-    margin-left: 15%;
+    margin-left: 20%;
   }
 
   .navLinks {
-    margin-right: 4%;
+    margin-right: 10%;
   }
 
   #navEmail {
@@ -381,6 +381,8 @@ footer {
   .vendorList1 {
     display: block;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .vendorList1 a {
@@ -405,6 +407,7 @@ footer {
   .emailLink,
   .phoneLink {
     font-size: 14px;
+    
   }
 
   footer {
@@ -414,10 +417,25 @@ footer {
   }
 
   .iconLinks {
-    margin-right: 0;
+    margin-right: 50px;
     margin-bottom: 30px;
     gap: 20px;
   }
+}
+
+@media (max-width: 680px) {
+  #productsLink,
+  #servicesLink {
+    display: none;
+  }
+  .vendorList1 {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
 }
 
 /* Large Phone */
